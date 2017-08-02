@@ -1,13 +1,13 @@
 #!/bin/bash
-# Gets a fresh Pharo 3.0 image and VM
+# Gets a fresh Pharo 5.0 image and VM
 
-# Load Pharo 3.0 image (without dependency on mktemp)
+# Load Pharo 5.0 image (without dependency on mktemp)
 
 # stop the script if a single command fails
 set -e
-# DOWNLOADING THE LATEST PHARO 30 IMAGE =========================================
-IMAGE_URL="http://files.pharo.org/image/30/latest.zip"
-echo "Downloading the latest 30 Image:"
+# DOWNLOADING THE LATEST PHARO 50 IMAGE =========================================
+IMAGE_URL="http://files.pharo.org/image/50/latest.zip"
+echo "Downloading the latest 50 Image:"
 echo "    $IMAGE_URL"
 
 rm -rf fresh.zip
@@ -24,4 +24,4 @@ mv Pharo*.image Pharo.image
 mv Pharo*.changes Pharo.changes
 
 # Load VM
-curl get.pharo.org/vm30 | bash
+curl get.pharo.org/vm50 | bash

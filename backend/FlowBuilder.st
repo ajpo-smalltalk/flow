@@ -1,1 +1,6 @@
-Metacello new	baseline: 'Flow';	repository: 'github://flow-stack/flow:master/backend/src';	load.Smalltalk saveSession.
+Metacello new
+	baseline: 'Flow';
+	repository: 'github://ajpo-smalltalk/flow:master/backend/src';
+	load.
+
+Smalltalk saveSession.

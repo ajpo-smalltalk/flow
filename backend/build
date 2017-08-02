@@ -9,8 +9,8 @@ rm -f crash.dmp
 rm -rf package-cache
 
 echo "Loading fresh stable..."
-# Load Pharo 3.0 image and VM
-./getPharo30
+# Load Pharo 5.0 image and VM
+./getPharo50
 
 # Open the image and start building the project in it
 echo "Opening Pharo and kick off building a fresh image build for the project's backend..."

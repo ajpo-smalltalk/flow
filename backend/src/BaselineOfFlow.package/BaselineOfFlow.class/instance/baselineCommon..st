@@ -22,6 +22,7 @@ baselineCommon: spec
         package: 'Flow-Examples'
           with: [ spec requires: #('Flow-Core-Platform' 'Flow-Core-API') ];
         package: 'MTAClient';
+        package: 'all';
         yourself.
       spec
         group: 'default' with: #('all');
