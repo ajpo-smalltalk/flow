@@ -34,5 +34,4 @@ baselineCommon: spec
             #('Flow-Core-Platform' 'Flow-Core-App' 'Flow-Core-API' 'Flow-Core-Handlers');
         group: 'Examples' with: #('Core' 'Flow-Examples');
         group: 'Tests' with: #('Core' 'Flow-Tests');
-        group: 'all' with: #('Tests');
         yourself ]
