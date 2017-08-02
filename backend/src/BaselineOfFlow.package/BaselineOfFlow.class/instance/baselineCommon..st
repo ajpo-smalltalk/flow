@@ -11,8 +11,10 @@ baselineCommon: spec
                 loads: #('all') ];
         yourself.
       spec
-        package: 'Flow-Core-Platform' with: [ spec requires: #('Mapless' 'MTAClient') ];
-        package: 'Flow-Core-API' with: [ spec requires: #('Flow-Core-Platform') ];
+        package: 'Flow-Core-Platform' 
+          with: [ spec requires: #('Mapless' 'MTAClient') ];
+        package: 'Flow-Core-API' 
+          with: [ spec requires: #('Flow-Core-Platform') ];
         package: 'Flow-Core-App'
           with: [ spec requires: #('Flow-Core-Platform' 'Flow-Core-Handlers') ];
         package: 'Flow-Core-Handlers'
@@ -22,7 +24,8 @@ baselineCommon: spec
         package: 'Flow-Examples'
           with: [ spec requires: #('Flow-Core-Platform' 'Flow-Core-API') ];
         package: 'MTAClient';
-        package: 'all';
+        package: 'all'
+          with: [ spec requires: #('Flow-Core-Platform' 'Flow-Core-API' 'Flow-Core-App' 'Flow-Core-Handlers' 'Flow-Tests' 'Flow-Examples' ) ];
         yourself.
       spec
         group: 'default' with: #('all');
