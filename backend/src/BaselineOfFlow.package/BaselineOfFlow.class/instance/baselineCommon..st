@@ -26,11 +26,10 @@ baselineCommon: spec
         package: 'MTAClient';
         yourself.
       spec
-        group: 'default' with: #('all');
+        group: 'default' with: #('Core');
         group: 'Core'
           with:
             #('Flow-Core-Platform' 'Flow-Core-App' 'Flow-Core-API' 'Flow-Core-Handlers');
         group: 'Examples' with: #('Core' 'Flow-Examples');
         group: 'Tests' with: #('Core' 'Flow-Tests');
-        group: 'all' with: #('Flow-Core-Platform');
         yourself ]
